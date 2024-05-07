@@ -123,8 +123,6 @@ print('accuracy: {:5.4f}'.format(accuracy_score(y_true=val_df['class'], y_pred=f
 from sklearn.metrics import classification_report
 print(classification_report(y_true=val_df['class'], y_pred=forest.predict(X=val_df['value'].apply(pd.Series))))
 
-
-
 import pickle
 
 # Save the trained model to a file
